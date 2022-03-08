@@ -1,0 +1,14 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "telemedicine-isurunee",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "tele-medicine"
+  ],
+  "author": "waluka to isurunee",
+  "license": "ISC"
+}
