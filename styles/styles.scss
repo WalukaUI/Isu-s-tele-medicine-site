@@ -1,10 +1,7 @@
 @import "./variables";
-@import "./navbar.scss";
-
+@import "./navbar";
+@import "./section1";
 body {
-  // background-color: $bkgroundcolor;
   margin: 0;
-  background-image: url("../images/doctable.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  font-family: "Fredoka", sans-serif;
 }

@@ -40,12 +40,41 @@
 
 .navigate-tabs button {
   background-color: #3797a4;
+  -webkit-box-shadow: 0px 10px 14px -7px #276873;
+          box-shadow: 0px 10px 14px -7px #276873;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #399ba8), to(#3eb5c7));
+  background: linear-gradient(to bottom, #399ba8 5%, #3eb5c7 100%);
+  background-color: #399ba8;
+  border-radius: 8px;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 15px;
+  padding: 13px 32px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #3d768a;
+}
+
+.navigate-tabs button:hover {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #3eb5c7), to(#399ba8));
+  background: linear-gradient(to bottom, #3eb5c7 5%, #399ba8 100%);
+  background-color: #3eb5c7;
+}
+
+.navigate-tabs a {
+  cursor: pointer;
+}
+
+#section1 {
+  background-image: url("../images/doctable.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 500px;
 }
 
 body {
   margin: 0;
-  background-image: url("../images/doctable.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  font-family: "Fredoka", sans-serif;
 }
 /*# sourceMappingURL=styles.css.map */
