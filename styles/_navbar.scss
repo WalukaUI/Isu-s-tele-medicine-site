@@ -1,17 +1,17 @@
 /* Navigation bar */
 
 .navigationbar {
-  background-color: aquamarine;
+  background-color: #e4e4e4;
+  opacity: 0.8;
 }
 .navigate-tabs {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  background-color: rgb(218, 218, 68);
+  @include flexCenter(row);
   div {
-    height: 10vh;
-    display: flex;
-    background-color: rgb(188, 188, 224);
-    align-items: center;
+    @include flexCenter(row);
+    min-height: 10vh;
+    padding-left: 2rem;
+  }
+  button {
+    background-color: #3797a4;
   }
 }

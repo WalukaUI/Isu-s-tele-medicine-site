@@ -1,6 +1,7 @@
 /* Navigation bar */
 .navigationbar {
-  background-color: aquamarine;
+  background-color: #e4e4e4;
+  opacity: 0.8;
 }
 
 .navigate-tabs {
@@ -11,25 +12,40 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  background-color: #dada44;
-}
-
-.navigate-tabs div {
-  height: 10vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: #bcbce0;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.navigate-tabs div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  min-height: 10vh;
+  padding-left: 2rem;
+}
+
+.navigate-tabs button {
+  background-color: #3797a4;
 }
 
 body {
-  background-color: #b63766;
   margin: 0;
+  background-image: url("../images/doctable.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 /*# sourceMappingURL=styles.css.map */

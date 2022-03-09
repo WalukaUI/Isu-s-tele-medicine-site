@@ -2,6 +2,9 @@
 @import "./navbar.scss";
 
 body {
-  background-color: $bkgroundcolor;
+  // background-color: $bkgroundcolor;
   margin: 0;
+  background-image: url("../images/doctable.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
