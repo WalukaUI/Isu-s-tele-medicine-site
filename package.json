@@ -10,5 +10,13 @@
     "tele-medicine"
   ],
   "author": "waluka to isurunee",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WalukaUI/Isu-s-tele-medicine-site.git"
+  },
+  "bugs": {
+    "url": "https://github.com/WalukaUI/Isu-s-tele-medicine-site/issues"
+  },
+  "homepage": "https://github.com/WalukaUI/Isu-s-tele-medicine-site#readme"
 }
