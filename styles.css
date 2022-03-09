@@ -1,0 +1,21 @@
+body {
+  background-color: rgb(175, 238, 217);
+}
+/* Navigation bar */
+.navigationbar {
+  background-color: aquamarine;
+}
+.navigate-tabs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: rgb(218, 218, 68);
+}
+.navigate-tabs div {
+  height: 10vh;
+  display: flex;
+  background-color: rgb(188, 188, 224);
+  align-items: center;
+}
+
+/* Section 1 */
