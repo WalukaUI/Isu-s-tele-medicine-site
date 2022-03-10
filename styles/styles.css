@@ -5,44 +5,21 @@
 }
 
 .navigate-tabs {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
 }
-
 .navigate-tabs div {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
   min-height: 10vh;
   padding-left: 2rem;
 }
-
 .navigate-tabs button {
-  background-color: #3797a4;
-  -webkit-box-shadow: 0px 10px 14px -7px #276873;
-          box-shadow: 0px 10px 14px -7px #276873;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #399ba8), to(#3eb5c7));
+  box-shadow: 0px 10px 14px -7px #276873;
   background: linear-gradient(to bottom, #399ba8 5%, #3eb5c7 100%);
   background-color: #399ba8;
   border-radius: 8px;
@@ -50,31 +27,122 @@
   cursor: pointer;
   color: #ffffff;
   font-family: Arial;
-  font-size: 15px;
+  font-size: 1rem;
   padding: 13px 32px;
   text-decoration: none;
   text-shadow: 0px 1px 0px #3d768a;
 }
-
 .navigate-tabs button:hover {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #3eb5c7), to(#399ba8));
   background: linear-gradient(to bottom, #3eb5c7 5%, #399ba8 100%);
   background-color: #3eb5c7;
 }
-
 .navigate-tabs a {
   cursor: pointer;
 }
 
-#section1 {
-  background-image: url("../images/doctable.jpg");
-  background-repeat: no-repeat;
+.crossfade {
+  box-sizing: border-box;
+}
+
+.crossfade > figure {
+  margin: 0;
+  -webkit-animation: imageAnimation 30s linear infinite 0s;
+          animation: imageAnimation 30s linear infinite 0s;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
   background-size: cover;
-  min-height: 500px;
+  background-position: center;
+  color: transparent;
+  height: 100%;
+  left: 0px;
+  opacity: 0;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  z-index: -1;
+}
+
+.crossfade > figure:nth-child(1) {
+  background-image: url("../images/doctable.jpg");
+}
+
+.crossfade > figure:nth-child(2) {
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+  background-image: url("2.jpg");
+}
+
+.crossfade > figure:nth-child(3) {
+  -webkit-animation-delay: 12s;
+          animation-delay: 12s;
+  background-image: url("../images/doctable.jpg");
+}
+
+.crossfade > figure:nth-child(4) {
+  -webkit-animation-delay: 18s;
+          animation-delay: 18s;
+  background-image: url("4.jpg");
+}
+
+.crossfade > figure:nth-child(5) {
+  -webkit-animation-delay: 24s;
+          animation-delay: 24s;
+  background-image: url("5.jpg");
+}
+
+@-webkit-keyframes imageAnimation {
+  0% {
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  8% {
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  17% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes imageAnimation {
+  0% {
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  8% {
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  17% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+#section2 h1 {
+  margin: 40px;
 }
 
 body {
   margin: 0;
   font-family: "Fredoka", sans-serif;
 }
-/*# sourceMappingURL=styles.css.map */
+body h1 {
+  margin: 0;
+  font-size: 30px;
+  color: black;
+}/*# sourceMappingURL=styles.css.map */
