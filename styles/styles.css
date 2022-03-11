@@ -1,24 +1,10 @@
 /* Navigation bar */
-.navigationbar {
-  background-color: #e4e4e4;
-  opacity: 0.8;
+.navbar {
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 
-.navigate-tabs {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
-}
-.navigate-tabs div {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
-  min-height: 10vh;
-  padding-left: 2rem;
-}
-.navigate-tabs button {
+.appointmentbtn {
   box-shadow: 0px 10px 14px -7px #276873;
   background: linear-gradient(to bottom, #399ba8 5%, #3eb5c7 100%);
   background-color: #399ba8;
@@ -31,108 +17,43 @@
   padding: 13px 32px;
   text-decoration: none;
   text-shadow: 0px 1px 0px #3d768a;
+  margin-left: 100px;
 }
-.navigate-tabs button:hover {
+.appointmentbtn:hover {
   background: linear-gradient(to bottom, #3eb5c7 5%, #399ba8 100%);
   background-color: #3eb5c7;
 }
-.navigate-tabs a {
-  cursor: pointer;
-}
 
-.crossfade {
-  box-sizing: border-box;
+@media only screen and (max-width: 900px) {
+  .appointmentbtn {
+    margin-left: 0;
+  }
 }
-
-.crossfade > figure {
-  margin: 0;
-  -webkit-animation: imageAnimation 30s linear infinite 0s;
-          animation: imageAnimation 30s linear infinite 0s;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+.carousel-item {
+  height: 100vh;
+  width: auto;
+  min-height: 300px;
+  background: no-repeat scroll center scroll;
   background-size: cover;
-  background-position: center;
-  color: transparent;
-  height: 100%;
-  left: 0px;
-  opacity: 0;
+}
+.carousel-item:before {
+  content: "";
+  display: block;
   position: absolute;
-  top: 0px;
-  width: 100%;
-  z-index: -1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #000;
+  opacity: 0.7;
 }
 
-.crossfade > figure:nth-child(1) {
-  background-image: url("../images/doctable.jpg");
+.carousel-caption {
+  bottom: 180px;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
-.crossfade > figure:nth-child(2) {
-  -webkit-animation-delay: 6s;
-          animation-delay: 6s;
-  background-image: url("2.jpg");
-}
-
-.crossfade > figure:nth-child(3) {
-  -webkit-animation-delay: 12s;
-          animation-delay: 12s;
-  background-image: url("../images/doctable.jpg");
-}
-
-.crossfade > figure:nth-child(4) {
-  -webkit-animation-delay: 18s;
-          animation-delay: 18s;
-  background-image: url("4.jpg");
-}
-
-.crossfade > figure:nth-child(5) {
-  -webkit-animation-delay: 24s;
-          animation-delay: 24s;
-  background-image: url("5.jpg");
-}
-
-@-webkit-keyframes imageAnimation {
-  0% {
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
-    opacity: 0;
-  }
-  8% {
-    -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
-    opacity: 1;
-  }
-  17% {
-    opacity: 1;
-  }
-  25% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@keyframes imageAnimation {
-  0% {
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
-    opacity: 0;
-  }
-  8% {
-    -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
-    opacity: 1;
-  }
-  17% {
-    opacity: 1;
-  }
-  25% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
 #section2 h1 {
   margin: 40px;
 }
@@ -140,6 +61,7 @@
 body {
   margin: 0;
   font-family: "Fredoka", sans-serif;
+  background-color: #ce9345;
 }
 body h1 {
   margin: 0;

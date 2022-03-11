@@ -1,35 +1,70 @@
 /* Navigation bar */
 
-.navigationbar {
-  background-color: #e4e4e4;
-  opacity: 0.8;
+// .navigationbar {
+//   background-color: #e4e4e4;
+//   opacity: 0.8;
+//   position: absolute;
+//   left: 0;
+//   top: 0;
+//   width: auto;
+//   z-index: 10;
+//   font-size: 1.1rem;
+// }
+// .navigate-tabs {
+//   @include flexCenter(row);
+//   div {
+//     @include flexCenter(row);
+//     min-height: 10vh;
+//     padding-left: 2rem;
+//   }
+//   button {
+//     box-shadow: 0px 10px 14px -7px #276873;
+//     background: linear-gradient(to bottom, #399ba8 5%, #3eb5c7 100%);
+//     background-color: #399ba8;
+//     border-radius: 8px;
+//     display: inline-block;
+//     cursor: pointer;
+//     color: #ffffff;
+//     font-family: Arial;
+//     font-size: 1rem;
+//     padding: 13px 32px;
+//     text-decoration: none;
+//     text-shadow: 0px 1px 0px #3d768a;
+//     &:hover {
+//       background: linear-gradient(to bottom, #3eb5c7 5%, #399ba8 100%);
+//       background-color: #3eb5c7;
+//     }
+//   }
+//   a {
+//     cursor: pointer;
+//   }
+// }
+
+.navbar {
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
-.navigate-tabs {
-  @include flexCenter(row);
-  div {
-    @include flexCenter(row);
-    min-height: 10vh;
-    padding-left: 2rem;
+.appointmentbtn {
+  box-shadow: 0px 10px 14px -7px #276873;
+  background: linear-gradient(to bottom, #399ba8 5%, #3eb5c7 100%);
+  background-color: #399ba8;
+  border-radius: 8px;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 1rem;
+  padding: 13px 32px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #3d768a;
+  margin-left: 100px;
+  &:hover {
+    background: linear-gradient(to bottom, #3eb5c7 5%, #399ba8 100%);
+    background-color: #3eb5c7;
   }
-  button {
-    box-shadow: 0px 10px 14px -7px #276873;
-    background: linear-gradient(to bottom, #399ba8 5%, #3eb5c7 100%);
-    background-color: #399ba8;
-    border-radius: 8px;
-    display: inline-block;
-    cursor: pointer;
-    color: #ffffff;
-    font-family: Arial;
-    font-size: 1rem;
-    padding: 13px 32px;
-    text-decoration: none;
-    text-shadow: 0px 1px 0px #3d768a;
-    &:hover {
-      background: linear-gradient(to bottom, #3eb5c7 5%, #399ba8 100%);
-      background-color: #3eb5c7;
-    }
-  }
-  a {
-    cursor: pointer;
+}
+@media only screen and (max-width: 900px) {
+  .appointmentbtn {
+    margin-left: 0;
   }
 }

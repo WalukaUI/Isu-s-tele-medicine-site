@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/WalukaUI/Isu-s-tele-medicine-site/issues"
   },
-  "homepage": "https://github.com/WalukaUI/Isu-s-tele-medicine-site#readme"
+  "homepage": "https://github.com/WalukaUI/Isu-s-tele-medicine-site#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
 }
