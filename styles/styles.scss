@@ -2,10 +2,13 @@
 @import "./navbar";
 @import "./section1";
 @import "./section2";
+@import "./section3";
+@import "./carousel";
+
 body {
   margin: 0;
-  font-family: "Fredoka", sans-serif;
-  background-color: rgb(206, 147, 69);
+  font-family: "Fredoka", sans-serif !important;
+  background-color: rgb(206, 147, 69) !important;
   h1 {
     margin: 0;
     font-size: 30px;
