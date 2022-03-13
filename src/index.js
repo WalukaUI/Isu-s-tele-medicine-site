@@ -1,11 +1,20 @@
 //section animation slide in and fadein-------------------
 
-const observer = new IntersectionObserver((entries) => {
+const fadein = document.querySelectorAll(".fadeIn");
+const options = {
+  threshold: 0,
+  rootMargin: "-150px",
+};
+const apperOnScroll = new IntersectionObserver(function (entries) {
   entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      document.querySelectorAll(".js-scroll").classList.add("divImage");
-      document.querySelectorAll(".jscontent").classList.add("divContent");
+    if (!entry.isIntersecting) {
+      return;
     }
+    entry.target.classList.add("appear");
+    apperOnScroll.unobserve(entry.target);
   });
+}, options);
+
+fadein.forEach((fader) => {
+  apperOnScroll.observe(fader);
 });
-observer.observe(document.querySelectorAll(".section"));
